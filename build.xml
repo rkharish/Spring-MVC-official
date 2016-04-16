@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="all" name="spring-app-mobile">
+	<property name="dirs.base" value="${basedir}"/>
+    <property environment="env"/>
+    <property name="M2_REPO" value="../../.m2/repository"/>
+    <property name="ECLIPSE_HOME" value="E:/eclipse-jee-mars-1-win32-x86_64/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="spring-app-mobile.classpath">
+        <pathelement location="${M2_REPO}/javax/ws/rs/javax.ws.rs-api/2.0-m10/javax.ws.rs-api-2.0-m10.jar"/>
+        <pathelement location="${M2_REPO}/javax/mail/mail/1.4.3/mail-1.4.3.jar"/>
+        <pathelement location="${M2_REPO}/javax/activation/activation/1.1/activation-1.1.jar"/>
+        <pathelement location="${M2_REPO}/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+        <pathelement location="${M2_REPO}/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar"/>
+        <pathelement location="${M2_REPO}/javax/servlet/jstl/1.2/jstl-1.2.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-jaxws/2.7.3/cxf-rt-frontend-jaxws-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar"/>
+        <pathelement location="${M2_REPO}/asm/asm/3.3.1/asm-3.3.1.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-api/2.7.3/cxf-api-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/codehaus/woodstox/woodstox-core-asl/4.1.4/woodstox-core-asl-4.1.4.jar"/>
+        <pathelement location="${M2_REPO}/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/ws/xmlschema/xmlschema-core/2.0.3/xmlschema-core-2.0.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+        <pathelement location="${M2_REPO}/wsdl4j/wsdl4j/1.6.2/wsdl4j-1.6.2.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-core/2.7.3/cxf-rt-core-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/com/sun/xml/bind/jaxb-impl/2.2.6/jaxb-impl-2.2.6.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-bindings-soap/2.7.3/cxf-rt-bindings-soap-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-databinding-jaxb/2.7.3/cxf-rt-databinding-jaxb-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-bindings-xml/2.7.3/cxf-rt-bindings-xml-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-simple/2.7.3/cxf-rt-frontend-simple-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-transports-http/2.7.3/cxf-rt-transports-http-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-ws-addr/2.7.3/cxf-rt-ws-addr-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-ws-policy/2.7.3/cxf-rt-ws-policy-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/neethi/neethi/3.0.2/neethi-3.0.2.jar"/>
+        <pathelement location="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-jaxrs/2.7.3/cxf-rt-frontend-jaxrs-2.7.3.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-core/3.2.2.RELEASE/spring-core-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-beans/3.2.2.RELEASE/spring-beans-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-context/3.2.2.RELEASE/spring-context-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-aop/3.2.2.RELEASE/spring-aop-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-expression/3.2.2.RELEASE/spring-expression-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-context-support/3.2.2.RELEASE/spring-context-support-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/taglibs/standard/1.1.2/standard-1.1.2.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-jdbc/3.2.2.RELEASE/spring-jdbc-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-tx/3.2.2.RELEASE/spring-tx-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-web/3.2.2.RELEASE/spring-web-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/spring-webmvc/3.2.2.RELEASE/spring-webmvc-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/security/spring-security-config/3.2.2.RELEASE/spring-security-config-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/security/spring-security-core/3.2.2.RELEASE/spring-security-core-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/org/springframework/security/spring-security-web/3.2.2.RELEASE/spring-security-web-3.2.2.RELEASE.jar"/>
+        <pathelement location="${M2_REPO}/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar"/>
+        <pathelement location="${M2_REPO}/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar"/>
+        <pathelement location="${M2_REPO}/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar"/>
+		<pathelement path="${classpath}"/>
+    </path>
+	<target name="init">
+		<property name="web.src" value="${dirs.base}/src/main/java"/>
+		<property name="web.contents" value="${dirs.base}/src/main/webapp"/>
+		<property name="jdk.path" value="C:/Program Files/Java/jdk1.7.0_79/bin"/>
+		<mkdir dir="jadoo"/>	
+		<mkdir dir="jadoo/WEB-INF"/>	
+		<mkdir dir="jadoo/WEB-INF/classes"/>
+		<mkdir dir="jadoo/WEB-INF/lib"/>
+	</target>
+	
+	<target name="compilejavafile" depends="init">
+		<javac srcdir="${web.src}" destdir="${dirs.base}/jadoo/WEB-INF/classes" debug="true" includes="**/*.java" >
+							<classpath refid="spring-app-mobile.classpath"/>
+				</javac>
+	</target>
+	
+	
+	<target name="copywebjar">
+			<copy todir="${dirs.base}/jadoo/WEB-INF/lib">
+				        <fileset dir="${M2_REPO}/javax/ws/rs/javax.ws.rs-api/2.0-m10"  includes="javax.ws.rs-api-2.0-m10.jar" />
+				        <fileset dir="${M2_REPO}/javax/mail/mail/1.4.3"  includes="mail-1.4.3.jar"/>
+				        <fileset dir="${M2_REPO}/javax/activation/activation/1.1"  includes="activation-1.1.jar"/>
+				        <fileset dir="${M2_REPO}/javax/servlet/servlet-api/2.5"  includes="servlet-api-2.5.jar"/>
+				        <fileset dir="${M2_REPO}/javax/servlet/jsp-api/2.0"  includes="jsp-api-2.0.jar"/>
+				        <fileset dir="${M2_REPO}/javax/servlet/jstl/1.2"  includes="jstl-1.2.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-jaxws/2.7.3"  includes="cxf-rt-frontend-jaxws-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/xml-resolver/xml-resolver/1.2"  includes="xml-resolver-1.2.jar"/>
+				        <fileset dir="${M2_REPO}/asm/asm/3.3.1"  includes="asm-3.3.1.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-api/2.7.3"  includes="cxf-api-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/codehaus/woodstox/woodstox-core-asl/4.1.4"  includes="woodstox-core-asl-4.1.4.jar"/>
+				        <fileset dir="${M2_REPO}/org/codehaus/woodstox/stax2-api/3.1.1"  includes="stax2-api-3.1.1.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/ws/xmlschema/xmlschema-core/2.0.3"  includes="xmlschema-core-2.0.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/geronimo/specs/geronimo-javamail_1.4_spec/1.7.1"  includes="geronimo-javamail_1.4_spec-1.7.1.jar"/>
+				        <fileset dir="${M2_REPO}/wsdl4j/wsdl4j/1.6.2"  includes="wsdl4j-1.6.2.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-core/2.7.3"  includes="cxf-rt-core-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/com/sun/xml/bind/jaxb-impl/2.2.6"  includes="jaxb-impl-2.2.6.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-bindings-soap/2.7.3"  includes="cxf-rt-bindings-soap-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-databinding-jaxb/2.7.3"  includes="cxf-rt-databinding-jaxb-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-bindings-xml/2.7.3"  includes="cxf-rt-bindings-xml-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-simple/2.7.3"  includes="cxf-rt-frontend-simple-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-transports-http/2.7.3"  includes="cxf-rt-transports-http-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-ws-addr/2.7.3"  includes="cxf-rt-ws-addr-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-ws-policy/2.7.3"  includes="cxf-rt-ws-policy-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/neethi/neethi/3.0.2"  includes="neethi-3.0.2.jar"/>
+				        <fileset dir="${M2_REPO}/org/apache/cxf/cxf-rt-frontend-jaxrs/2.7.3"  includes="cxf-rt-frontend-jaxrs-2.7.3.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-core/3.2.2.RELEASE"  includes="spring-core-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/commons-logging/commons-logging/1.1.1"  includes="commons-logging-1.1.1.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-beans/3.2.2.RELEASE"  includes="spring-beans-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-context/3.2.2.RELEASE"  includes="spring-context-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-aop/3.2.2.RELEASE"  includes="spring-aop-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/aopalliance/aopalliance/1.0"  includes="aopalliance-1.0.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-expression/3.2.2.RELEASE"  includes="spring-expression-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-context-support/3.2.2.RELEASE"  includes="spring-context-support-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/taglibs/standard/1.1.2"  includes="standard-1.1.2.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-jdbc/3.2.2.RELEASE"  includes="spring-jdbc-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-tx/3.2.2.RELEASE"  includes="spring-tx-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-web/3.2.2.RELEASE"  includes="spring-web-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/spring-webmvc/3.2.2.RELEASE"  includes="spring-webmvc-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/security/spring-security-config/3.2.2.RELEASE"  includes="spring-security-config-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/security/spring-security-core/3.2.2.RELEASE"  includes="spring-security-core-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/org/springframework/security/spring-security-web/3.2.2.RELEASE"  includes="spring-security-web-3.2.2.RELEASE.jar"/>
+				        <fileset dir="${M2_REPO}/mysql/mysql-connector-java/5.1.9"  includes="mysql-connector-java-5.1.9.jar"/>
+				        <fileset dir="${M2_REPO}/commons-fileupload/commons-fileupload/1.2.2"  includes="commons-fileupload-1.2.2.jar"/>
+				        <fileset dir="${M2_REPO}/commons-io/commons-io/1.3.2"  includes="commons-io-1.3.2.jar"/>
+			</copy>
+	</target>
+	
+	<target name="copywebs">
+			 <copy todir="${dirs.base}/jadoo">
+						<fileset dir="${web.contents}" includes="**/*.*" />
+				</copy>
+	</target>
+		
+	<target name="createWebWar">
+			<jar jarfile="${dirs.base}/target/burger-web-service.war" basedir="${dirs.base}/jadoo" />
+	</target>
+
+		
+	<target name="all" depends="init,compilejavafile,copywebjar,copywebs,createWebWar,clean">
+	
+	</target>
+	
+	<target name="clean">
+			<delete>
+			    	<fileset dir="${dirs.base}/jadoo" includes="**/*.*" />
+			</delete>
+		</target>
+
+</project>

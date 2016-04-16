@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.burger.com/fresh" 
+         xmlns:tns="http://www.burger.com/fresh" elementFormDefault="qualified">
+      <!-- 
+          Class Burger {
+             <burger>
+             	   <bid>B929292<bid>
+                   <vendor>King</vendor>
+                    <age>9292</age>
+             </burger>
+             complexType name is similar to class in java
+             
+       -->
+         <!-- Instantiating the complex type -->
+         <element name="burgerReqeust" type="tns:Burger"/>
+         <element name="burgerResponse" type="string"/> 
+       
+		<complexType name="Burger">
+		             <sequence>
+		             	     <element  name="bid" type="string"/>
+		             		 <element  name="vendor" type="string"/>
+		             		 <element  name="store" type="string"/>
+		             		 <element  name="price" type="float"/>
+		             		 <element  name="type" type="string"/>
+		             		 <element  name="photo" type="base64Binary"/>
+		             </sequence>
+		</complexType>       
+          
+</schema>
